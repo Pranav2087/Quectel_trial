@@ -40,7 +40,7 @@ mkdir -p $INS_DIR &&
 pushd $INS_DIR
 
 echo -e "${YELLOW}Downloading QMI WWAN Driver for Quectel Module${SET}"
-wget https://raw.githubusercontent.com/Pranav2087/Quectel_trial/main/packages/Quectel_Linux_Android_QMI_WWAN_Driver_V1.2.1 -O qmi_wwan.zip 
+wget https://raw.githubusercontent.com/Pranav2087/Quectel_trial/main/packages/Quectel_Linux_Android_QMI_WWAN_Driver_V1.2.1.zip -O qmi_wwan.zip 
 unzip qmi_wwan.zip -d $INS_DIR && rm qmi_wwan.zip
 pushd $INS_DIR/qmi_wwan_q
 make && make install
